@@ -12,21 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tasks', function (Blueprint $table) {
-            $table->bigIncremenets('id');
-            $table->string('task_name');
-            $table->string('task_location')->nullable();
-
-
-            $table->tinyInteger('time_complexity');
-
-            $table->string('materials_required')->nullable();
-
-            $table->dateTime('deadline')->nullable();
-
-            $table->tinyInteger('priority')->nullable();
-
-            $table->string('category')->nullable();
-
+            $table->id();
             $table->timestamps();
         });
     }
