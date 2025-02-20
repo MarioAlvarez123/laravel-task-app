@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Task;
 class TaskSeeder extends Seeder
@@ -19,5 +19,4 @@ Task::create([
 'priority' => 2, // (1 => low, 2 => medium, 3 => high)
 'category' => 'chores'
 ]);
-}
-}
+}}
