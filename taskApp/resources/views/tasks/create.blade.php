@@ -26,6 +26,42 @@
 
         <div class="md-4">
             <label for="materials_required" class="block mb-1">Materials Required (Optional)</label>
+            <input type="text" name="materials_required" id="materials_required" class="w-full border rounded px-3 py-2" placeholder="e.g., Trash Bags, Broom">
         </div>
+
+        <div class="mb-4">
+            <label for="deadline" class="block mb-1"> Deadline (Optional)</label>
+            <input type="datetime-local" name="deadline" id="deadline" class="w-full border rounded px-3 py-2">
+        </div>
+
+        <div class="mb-4">
+            <label for="priority" class="block mb-1"> Priority (Optional)</label>
+            <select name="priority" id="priority" class="w-full border rounded px-3 py-2">
+            <option value="">Select Priority</option>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label for="category" class="block mb-1">Category (Optional)</label>
+                <input type="text" name="category" id="category"
+class="w-full border rounded px-3 py-2"
+placeholder="e.g., chores, work, health">
+        </div>
+        <div class="flex gap-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Create Task</button>
+            <a href="{{ url('/') }}"
+class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
+Cancel
+</a>
+        </div>
+
+
+
+
     </form>
 </div>
+
+@endsection
