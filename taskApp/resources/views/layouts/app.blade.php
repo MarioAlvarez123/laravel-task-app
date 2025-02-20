@@ -6,9 +6,9 @@
 <title>Laravel Task App</title>
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-100">
+<body class="bg-green-500">
 <nav class="bg-white shadow p-4">
-<h1 class="text-xl font-bold text-blue-500">My Task App</h1>
+<h1 class="text-xl font-bold text-black-500">My Task App</h1>
 </nav>
 <main class="p-4">
 @yield('content')
