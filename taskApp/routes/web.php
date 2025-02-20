@@ -9,6 +9,6 @@ use App\Http\Controllers\TaskController;
 Route::get('/', function () {
     return view('tasks.index');
 });
-Route::resource('task', TaskController::class);
+Route::resource('tasks', TaskController::class);
 Route::redirect('/', '/tasks');
 
